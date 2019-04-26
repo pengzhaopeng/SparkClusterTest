@@ -59,6 +59,8 @@ object DirectStream {
         //计算成交总金额
         CalculateUtil.calculateItem(fields)
 
+        //计算商品分类金额
+
         //更新偏移量
         value.asInstanceOf[CanCommitOffsets].commitAsync(offsetRanges)
       }
